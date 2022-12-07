@@ -31,7 +31,7 @@ export class Navbar extends Component {
         </div>
       </div>
     </nav>
-    <div className="container d-flex flex-row bd-highlight mb-3 overflow-auto">
+    {/* <div className="container d-flex flex-row bd-highlight mb-3 ">
     <div className='p-2 bd-highlight'>
       <button><Link className="nav-link active" aria-current="page" to="/">Home</Link>
       </button>
@@ -63,10 +63,10 @@ export class Navbar extends Component {
       <Link className="nav-link" to="/technology">Technology</Link>
       </button>
       </div>
-    </div>
-    <div className={`form-check form-switch text-${this.props.mode==='dark'?'light':'dark'}`}>
+    </div> */}
+    <div className='view overlay zoom'>
           {/* <input className="form-check-input" type="checkbox" onClick={this.props.toggleMode}  role="Switch" aria-checked="true" id="flexSwitchCheckDefault"/> */}
-          <img className='night' style={{margin: '-32px'}} onClick={this.props.toggleMode} src={night} alt="" srcset="" />
+          <img  className='img-fluid' onClick={this.props.toggleMode} src={night} alt='night mode' />
           </div>
     </div>
     )

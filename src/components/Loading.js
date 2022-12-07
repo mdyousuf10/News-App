@@ -5,7 +5,9 @@ export class Loading extends Component {
   render() {
     return (
       <div className='text-center mt-4' >
-        <img src={loading} alt="loading" />
+        <img style={{
+          width: '100px'
+        }} src={loading} alt="loading" />
       </div>
     )
   }
