@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import LoadingBar from 'react-top-loading-bar'
 
+
 export default class App extends Component {
 
   
@@ -63,6 +64,7 @@ export default class App extends Component {
         <Route exact path="/technology"><News setProgress={this.setProgress} key = "technology"  mode={this.state.mode} toggleMode={this.toggleMode} pagesize={15} country='in' category={'technology'}/></Route>
       </Switch>
       </Router>
+   
       </>
     )   
   }
